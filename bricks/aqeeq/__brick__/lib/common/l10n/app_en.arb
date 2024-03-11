@@ -1,0 +1,103 @@
+{
+  "@@locale": "en",
+  "appName": "{{name.titleCase()}}",
+  "@appName": {
+    "description": "App name label"
+  },
+  "currency": "{currency, select, USD {USD} IQD {IQD} other {#}}",
+  "@currency": {
+    "description": "Currency label",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD"
+      }
+    }
+  },
+  "free": "Free",
+  "@free": {
+    "description": "Price free label"
+  },
+  "selectedLanguage": "{status, select, ar {Arabic} en {English} other {English}}",
+  "@selectedLanguage": {
+    "description": "Selected Language label",
+    "placeholders": {
+      "status": {
+        "type": "String",
+        "example": "Arabic"
+      }
+    }
+  },
+  "light": "Light",
+  "@light": {
+    "description": "light mode label"
+  },
+  "dark": "Dark",
+  "@dark": {
+    "description": "dark mode label"
+  },
+  "welcome": "Welcome!",
+  "@welcome": {
+    "description": "Welcome label"
+  },
+  "signOut": "Sign out",
+  "@signOut": {
+    "description": "Sign Out button label"
+  },
+  "viewAll": "View All",
+  "@viewAll": {
+    "description": "View All label"
+  },
+  "close": "Close",
+  "@close": {
+    "description": "Close button label"
+  },
+  "apply": "Apply",
+  "@apply": {
+    "description": "Apply button label"
+  },
+  "notFound": "Page does not exist.",
+  "@notFound": {
+    "description": "Not found page message"
+  },
+  "tryAgain": "Try again",
+  "@tryAgain": {
+    "description": "Try again button label"
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "OK button label"
+  },
+  "goToHome": "Go to Home",
+  "@goToHome": {
+    "description": "Go to home button label"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "home button label"
+  },
+  "search": "Search...",
+  "@search": {
+    "description": "search hit text"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Profile title"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language label"
+  },
+  "brightness": "Brightness",
+  "@brightness": {
+    "description": "Brightness label"
+  },
+  "noResults": "No results...",
+  "@noResults": {
+    "description": "No results msg"
+  },
+  "errorOccurred": "An unexpected error occurred",
+  "@errorOccurred": {
+    "description": "error without message"
+  }
+}

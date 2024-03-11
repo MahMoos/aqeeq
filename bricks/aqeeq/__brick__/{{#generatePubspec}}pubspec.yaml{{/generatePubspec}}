@@ -1,0 +1,82 @@
+name: {{name.snakeCase()}}
+description: {{description}}
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+dependencies:
+  # Flutter SDK
+  flutter:
+    sdk: flutter
+  collection: any
+  async: any
+  meta: any
+
+  # Localization
+  intl: 0.18.1
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.10
+
+  # Codegen
+  riverpod_annotation: ^2.3.4
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+  # Networking
+  dio: ^5.4.1
+  fresh_dio: ^0.4.1
+  pretty_dio_logger: ^1.3.1
+
+  # Persisting
+  shared_preferences: ^2.2.2
+  cached_network_image: ^3.3.1
+
+  # Auth
+  {{#useAmplifyAuth}}amplify_flutter: ^1.7.0
+  amplify_auth_cognito: ^1.7.0
+  amplify_authenticator: ^1.5.4{{/useAmplifyAuth}}
+  {{#useFirebaseAuth}}firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  firebase_ui_auth: ^1.12.1
+  google_sign_in: ^6.2.1
+  firebase_ui_oauth_google: ^1.2.17{{/useFirebaseAuth}}
+
+  # Utils
+  go_router: ^13.2.0
+  path_provider: ^2.1.2
+  awesome_extensions: ^2.0.13
+  share_plus: ^7.2.2
+  url_launcher: ^6.2.5
+  package_info_plus: ^5.0.1
+
+  # UI
+  google_fonts: ^6.1.0
+  ms_undraw:
+    git:
+      url: https://github.com/MahMoos/ms_undraw.git
+
+dev_dependencies:
+  # Testing
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.3
+
+  # Lints
+  custom_lint: ^0.6.2
+  riverpod_lint: ^2.3.9
+  very_good_analysis: ^5.1.0
+
+  # Codegen
+  freezed: ^2.4.7
+  build_runner: ^2.4.8
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.11
+
+flutter:
+  uses-material-design: true
+  generate: true
