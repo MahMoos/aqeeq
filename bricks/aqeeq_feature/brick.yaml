@@ -1,0 +1,25 @@
+name: aqeeq_feature
+description: A clean architecture feature template using Riverpod
+
+# The following defines the brick repository url.
+# Uncomment and update the following line before publishing the brick.
+# repository: https://github.com/my_org/my_repo
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.52 <0.1.0"
+
+vars:
+  name:
+    type: string
+    description: Feature name
+    prompt: What is the name of the feature?
+  usecases:
+    type: list
+    description: Usecases to include in the feature
+    prompt: What usecases would you like to include in the feature?
+  paginated_usecases:
+    type: list
+    description: Usecases with pagination to include in the feature
+    prompt: What paginated usecases would you like to include in the feature?
